@@ -62,3 +62,77 @@
   font-weight: 800;
   font-family: "EB Garamond", serif;
 }
+
+
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 3rem 1.5rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff33;
+  padding-bottom: 0.3rem;
+  width: fit-content;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #cfd8dc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #cfd8dc;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ffffff33;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
