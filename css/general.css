@@ -45,16 +45,16 @@
   }
 
   .neon {
-  color: #003366;
+  color: #ffffff;
   text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff,
-    0 0 90px #fff,
-    0 0 100px #fff,
-    0 0 150px #fff;
+    0 0 5px rgba(0, 51, 102, 0.397),
+    0 0 10px rgba(0, 51, 102, 0.397),
+    0 0 20px rgba(0, 51, 102, 0.397),
+    0 0 40px rgba(0, 51, 102, 0.397),
+    0 0 80px rgba(0, 51, 102, 0.397),
+    0 0 90px rgba(0, 51, 102, 0.397),
+    0 0 100px rgba(0, 51, 102, 0.397),
+    0 0 150px rgba(0, 51, 102, 0.397)
 }
 
 .hero-content h1{
