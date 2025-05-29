@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>HOME | NERÓ BCN</title>
+  <link rel="icon" href="./../img/short-logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./../css/style.css">
+  <link rel="stylesheet" href="./../css/general.css">
+  <link rel="stylesheet" href="./../css/register.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+    <div class="header-content">
+      <span class="logo"><a href="../index.html"><img src="../img/logo.png"></a></span>
+
+      <nav>
+        <a href="../index.html">INICIO</a>
+        <a href="rooms.html">HABITACIONES</a>
+        <a href="rentals.html">NERÓ RENTALS</a>
+        <a href="register.html">LOGIN</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="general-div form-session">
+    <div class="register-container">
+
+      <div class="field">
+        <label>Nombre</label>
+        <input autofocus type="text" id="first_name" />
+      </div>
+
+      <div class="field">
+        <label>Apellido</label>
+        <input type="text" id="last_name" />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="field">
+        <label>Contraseña</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div class="field">
+        <label>Dia de nacimiento</label>
+        <input type="date" id="date_of_birth" />
+      </div>
+
+      <div class="div-button">
+        <button class="btn" id="submit">Enviar</button>
+      </div>
+      <div id="error"></div>
+      <script src="./../js/register.js"></script>
+      
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Neró Group</strong></p>
+    <p>Neró BCN Hotels</p>
+    <p>Neró Rentals</p>
+  </footer>
+</body>
+
+</html>
