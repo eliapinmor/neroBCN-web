@@ -3,14 +3,14 @@ const API = "http://172.17.40.7:8080";
 const loadCars = () => {
   const div = document.getElementById("cars");
   div.innerHTML = "";
-  fetch(API+"/car/listCars")
-    
+  fetch(API + "/car/listCars")
+
     .then((res) => {
-      if(res.ok==false) throw new Error("Error");
+      if (res.ok == false) throw new Error("Error");
       return res.json();
     })
     .then((data) => {
-      const dataMostrar = data.slice(0, );
+      const dataMostrar = data.slice(0,);
       dataMostrar.forEach((car) => {
         // console.log(car)
         div.innerHTML += `
@@ -31,7 +31,7 @@ const loadCars = () => {
           </div>
         `
       })
-        
+
     })
     .catch((err) => {
       console.error(err);
@@ -60,7 +60,7 @@ const rent = ($event) => {
     startDate: startDate,
     endDate: endDate
   }
-  fetch(API+"/car/addReservation", {
+  fetch(API + "/car/addReservation", {
     method: "POST",
     body: JSON.stringify(values),
     headers: {
@@ -68,7 +68,7 @@ const rent = ($event) => {
     }
   })
     .then((res) => {
-      if(res.ok==false) {
+      if (res.ok == false) {
         document.getElementById("error").innerHTML = errors[res.status];
         throw new Error("Error");
       }
@@ -88,15 +88,15 @@ const rentCar = ($event) => {
   rentCarDiv.innerHTML = `
     <div class="rentCar">
       <div class="mid">
-        <img onClick="closeModal()" src="https://img.icons8.com/ios7/600/delete-sign.png" class="close" width="40px">
+        <img onClick="closeModal()" src="https://img.icons8.com/ios7/600/delete-sign.png" class="close" width="20px">
         <div class="fields">
           <div class="field">
             <label>Email</label>
             <input id="email" type="text"/>
           </div>
           <div class="field">
-            <label>Contrasenya</label>
-            <input id="password" type="text"/>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" />
           </div>
           <div class="field">
             <label>Start Date</label>

@@ -58,10 +58,10 @@ const rentRoom = ($event) => {
               <label>Email</label>
               <input id="email" type="text"/>
             </div>
-            <div class="field">
-              <label>Contrasenya</label>
-              <input id="password" type="text"/>
-            </div>
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" />
+          </div>
             <div class="field">
               <label>Start Date</label>
               <input type="date" id="startDate" value="2025-04-25">
