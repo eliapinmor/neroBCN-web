@@ -192,13 +192,14 @@ button:hover:before {
     color: #000;
     font-weight: bold;
     cursor: pointer;
-   margin: auto;
+    transition: background-color 0.3s;
     margin-top: 1rem;
+    margin: auto;
 }
 
-/* .fields button:hover {
-    background-color: #1a18c0;
-} */
+.fields button:hover {
+    background-color: #003366;
+}
 
 
 
