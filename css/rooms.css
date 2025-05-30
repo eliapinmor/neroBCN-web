@@ -1,165 +1,177 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 body::before {
-    content: "";
-    background-image: url(../img/angelFondo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
-    opacity: 0.3;
-    position: absolute;
-    top: 1100px;
-    right: -280px;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 1700px;
+  content: "";
+  background-image: url(../img/angelFondo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  opacity: 0.3;
+  position: absolute;
+  top: 1100px;
+  right: -280px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 1700px;
 }
 
 
-.roomImg img{
-    width: 500px;
+.roomImg {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
 }
 
-.room{
-    display: flex;
-    gap: 25px;
-    margin:auto;
-    margin-bottom: 25px;
+.roomImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
 }
 
-.roomInfo{
-    align-self: center;
+.room {
+  display: flex;
+  gap: 25px;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
-.introduccion{
-    margin: auto;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 45px;
+.roomInfo {
+  align-self: center;
 }
 
-.introduccion h1{
-    text-transform: uppercase;
+.introduccion {
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 45px;
 }
 
-.introContent{
-    width: 65%;
-    margin: auto;
+.introduccion h1 {
+  text-transform: uppercase;
 }
+
+.introContent {
+  width: 65%;
+  margin: auto;
+}
+
 button {
-    color: #fff !important;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0.5em 1.2em;
-    background:#003366;
-    border: 2px solid;
-    border-color: white;
-    position: relative;
-    width: 150px;
-    border-radius: 40px;
-    height: 30px;
-    display: flex;            
-    align-items: center;      
-    justify-content: center; 
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #003366;
+  border: 2px solid;
+  border-color: white;
+  position: relative;
+  width: 150px;
+  border-radius: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 button:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 100%;
-    background: rgba(236, 236, 236, 0.1);
-    transition: all 1s ease;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(236, 236, 236, 0.1);
+  transition: all 1s ease;
 }
 
 button:hover:before {
-    width: 100%;
+  width: 100%;
 }
 
 .rentRoom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1020;
 }
 
 .mid {
-    width: 90%;
-    max-width: 400px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.3s;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .close:hover {
-    color: #444;
+  color: #444;
 }
 
 .fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #333;
 }
 
 .field label {
-    margin-bottom: 0.4rem;
-    font-weight: 500;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
 }
 
 .field input {
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #fff5f5;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-size: 1rem;
-    outline: none;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff5f5;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+  outline: none;
 }
 
 
 
 .fields button {
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #003366;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-   margin: auto;
-    margin-top: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #003366;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 
