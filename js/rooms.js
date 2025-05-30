@@ -1,4 +1,4 @@
-const API = "http://172.17.40.2:8080";
+const API = "http://172.17.40.7:8080";
 
 const errors = {
     461: "Usuario o contrasenya incorrectos",
@@ -81,7 +81,7 @@ const rentRoom = ($event) => {
 
 function mostrarHabitaciones() {
     const container = document.querySelector(".row");
-    const url = "http://172.17.40.2:8080/room/listRooms";
+    const url = "http://172.17.40.7:8080/room/listRooms";
 
     fetch(url)
         .then(response => {
